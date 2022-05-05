@@ -448,7 +448,6 @@ kousin();
 
 document.getElementById("tns").onclick = function () { me.tansa(); };
 document.getElementById("slp").onclick = function () { me.slp(); };
-document.getElementById("eat").onclick = function () { onoff("koudo", false); };
 
 document.getElementById("btat").onclick = function () { sento(); };
 document.getElementById("btes").onclick = function () { target.escape(); }
