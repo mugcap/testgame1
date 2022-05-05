@@ -445,28 +445,6 @@ function kousin() {
 
 
 kousin();
-//天気データ
-const Enwether = ['Clear', 'Clouds', 'Rain', 'Snow']
-const JPwether = ['晴れ', 'くもり', '雨', '雪']
-
-//天気更新
-request.onload = function () {
-    var data = this.response;
-    console.log(data);
-    var tenki;
-    var tenkiIn = Enwether.indexOf(data["weather"][0]["main"]);
-    console.log(data["weather"][0]["main"])
-    if (tenkiIn == -1) {
-        tenki = "不安定";
-    }
-    else {
-        tenki = JPwether[tenkiIn];
-    }
-    messageList.innerText = tenki;
-};
-
-
-request.send();
 
 document.getElementById("tns").onclick = function () { me.tansa(); };
 document.getElementById("slp").onclick = function () { me.slp(); };
