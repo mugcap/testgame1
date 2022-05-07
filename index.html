@@ -1,0 +1,81 @@
+<html>
+
+
+<head>
+    <style>
+        #box1 {
+            width: 250px;
+            float: left;
+        }
+
+        #box2,
+        #box3,
+        #box4 {
+            width: 200px;
+            float: left;
+        }
+
+        .narabi>div,
+        .narabi>button,
+        .narabi>select {
+            display: inline-block;
+        }
+
+        ul {
+            margin: 0px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>東京サバイバル</title>
+</head>
+
+<body>
+    <div id="box1">
+        <h2>東京サバイバル</h2>
+        <ul id='messages'>
+            <li>
+                <span>体力：</span><span id="hp"></span>
+            </li>
+            <li>
+                <span>満腹度：</span><span id="fp"></span>
+            </li>
+        </ul>
+        <p class='koudo ob'>
+            <button id="tns">探索</button>
+            <button id="slp">睡眠</button>
+            <button id="tr" style="display: none">釣り</button>
+        </p>
+        <p id="log"></p><br>
+        <span class="sento" style="display: none;">
+            <p id="btname" style="height: 10px;">名前</p>
+            <p id="bthp" style="height: 10px;">HP：50</p>
+            <p class="narabi">
+                <select id="btcom" class="koudo" style="width: 90px;"></select>
+                <button id="btat" class="koudo">戦う</button>
+                <button id="btes" class="koudo">逃げる</button>
+            </p>
+        </span>
+    </div>
+    <div id="box2">
+        <p>所持品</p>
+        <ul id="item"></ul>
+        <p>食料</p>
+        <ul id="food"></ul>
+        <p>武器</p>
+        <ul id="weapon"></ul>
+        <p>その他</p>
+        <ul id="snt"></ul>
+
+    </div>
+    <div id="box3">
+        <p>制作</p>
+    </div>
+    <div id="box4" style="display: none;">
+        <p>かまど</p>
+    </div>
+
+
+    <script src="../src/sample.js"></script>
+</body>
+
+</html>
